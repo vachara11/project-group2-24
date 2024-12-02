@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>รายการอาหารที่สั่ง</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content>
+  <div class="menu-list" >
+    <ion-list *ngFor="let sh of showorder" >
+      <ion-item >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oDorXLfvQC9HDF7SIFJ8SWefB5GoVNJDe-jPPfF-zMJF7vPVjyx1Kgh2Zq-fltjto4w&usqp=CAU" alt="Chef Icon" style="width: 100px; height: 100px;">
+        <ion-label>
+          <h2 style="text-align: center;" > {{ sh.menu }}</h2>
+          <p style="text-align: center;">{{ sh.price }} บาท</p>
+        </ion-label>
+        <ion-button color="danger">ลบ</ion-button>
+
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

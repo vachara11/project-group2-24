@@ -1,0 +1,64 @@
+.header-title {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.menu-image {
+  width: 100px;
+  height: 100px;
+}
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menu-button {
+  --background: white;
+  --color: rgb(0, 0, 0);
+  border-radius: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ion-button {
+  --border-radius: 10px;
+}
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ทำให้ div นี้มีความสูงเท่ากับหน้าจอ */
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+}
+
+.ion-content {
+  background-color: #ffcc00; /* สีที่ต้องการ */
+  height: 100vh; /* ตั้งค่าให้เต็มหน้าจอถ้าต้องการ */
+}
+

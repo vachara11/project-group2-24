@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>รายการสั่งอาหาร</ion-title>
+    <ion-button slot="end" color="warning" (click)="gotoshoworder()" >ดูอาหารที่สั่ง</ion-button>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content>
+  <div class="menu-list" *ngFor="let orders of order">
+    <ion-list >
+      <ion-item >
+        <img src="{{ orders.img }}" alt="Chef Icon" style="width: 100px; height: 100px;">
+        <ion-label>
+          <h2 style="text-align: center;" [(ngModel)]="orders.name"> {{ orders.name }} </h2>
+          <p style="text-align: center;">{{ orders.price }}</p>
+        </ion-label>
+        <ion-button color="success" id="open-toast" (click)="addmenu(orders)">เลือกเมนูนี้</ion-button>
+
+      </ion-item>
+    </ion-list>
+  </div>
+  <ion-toast trigger="open-toast" color="success" message="คุณได้เลือกเมนูนี้เรียบร้อยแล้ว" [duration]="3000"></ion-toast>
+</ion-content>

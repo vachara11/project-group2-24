@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="header-title">Noi Noodles Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" style="background-color: #5D45CC;">
+  
+  <!-- รูปภาพแรก -->
+  <div class="center-content">
+    <ion-img src="assets/icon/01.png"style="width: 200px; height: 200px;"class="menu-image"></ion-img>
+  </div>
+
+  <div class="center-content">
+    <ion-img src="assets/icon/02.png"style="width: 100px; height: 100px;"class="menu-image"></ion-img>
+  </div>
+  
+  <!-- ปุ่มรายการอาหาร -->
+  <div class="center-content">
+    <ion-button routerLink="/page2" expand="block" class="menu-button styled-button">
+      <ion-icon name="restaurant-outline"></ion-icon>
+      รายการอาหาร
+    </ion-button>
+  </div>
+
+  <!-- รูปภาพพ่อครัวเล็ก -->
+  <div class="center-content">
+    <ion-img src="assets/icon/03.png" class="menu-image"></ion-img>
+  </div>
+
+  <!-- ปุ่มการสั่งอาหาร -->
+  <div class="center-content">
+    <ion-button routerLink="/page3" expand="block" class="menu-button styled-button">
+      <ion-icon name="cart-outline"></ion-icon>
+      การสั่งอาหาร
+    </ion-button>
+  </div>
+ 
+  <div class="center-content">
+    <ion-img src="assets/icon/04.png"style="width: 100px; height: 100px;"class="menu-image"></ion-img>
+  </div>
+  <!-- ปุ่มเปิด-ปิด รับออเดอร์ -->
+  <div class="center-content">
+    <ion-button routerLink="/page4" expand="block" class="menu-button styled-button">
+      <ion-icon name="checkbox-outline"></ion-icon>
+      เปิด-ปิด รับออเดอร์
+    </ion-button>
+  </div>
+ <br>
+  <!-- ปุ่มที่ด้านล่างสุด -->
+  <ion-footer>
+     <ion-grid>
+        <ion-row class="ion-justify-content-center">
+      <ion-button routerLink="/page6" class="menu-button styled-button" color="success">ข้อมูลข่าวสาร</ion-button>
+        </ion-row>
+      </ion-grid>
+   </ion-footer>

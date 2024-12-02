@@ -1,0 +1,31 @@
+.center-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .menu-list ion-avatar img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .menu-list ion-label h2 {
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .menu-list ion-label p {
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  
+  ion-footer {
+    background-color: #3b5bdb;
+  }
+  
+  .home-button {
+    --background: #3b5bdb;
+    color: rgb(0, 0, 0);
+  }
+  

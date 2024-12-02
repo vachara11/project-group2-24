@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">การสั่งอาหาร</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="width">
+  <div class="ion-text-center">
+    <img src="assets/icon/03.png"  alt="Chef Icon" class="chef-icon">
+  </div>
+
+  <ion-card class="input-card">
+    <ion-item class="input-field">
+      <ion-label position="stacked">กรุณากรอกชื่อของท่าน</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-field">
+      <ion-label position="stacked">เบอร์โทร</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <div class="ion-padding-top ion-text-center">
+    <ion-button color="danger" expand="block" color="success"routerLink="/page5">ยืนยัน</ion-button>
+    <ion-button color="success" expand="block" color="danger"routerLink="/page3">ยกเลิก</ion-button>
+  </div>
+</ion-content>
